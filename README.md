@@ -19,15 +19,15 @@ function fibonacci( number ) {
 		return number;
 	}
 
-	return fibonacci( number - 1 ) + fibonacci( number - 2 );
+	return memoizedFibonacci( number - 1 ) + memoizedFibonacci( number - 2 );
 }
 
 var memoizedFibonacci = memize( fibonacci );
 
-memoizedFibonnaci( 8 ); // Invoked, cached, and returned
-memoizedFibonnaci( 8 ); // Returned from cache
-memoizedFibonnaci( 5 ); // Invoked, cached, and returned
-memoizedFibonnaci( 8 ); // Returned from cache
+memoizedFibonacci( 8 ); // Invoked, cached, and returned
+memoizedFibonacci( 8 ); // Returned from cache
+memoizedFibonacci( 5 ); // Invoked, cached, and returned
+memoizedFibonacci( 8 ); // Returned from cache
 ```
 
 ## Installation
